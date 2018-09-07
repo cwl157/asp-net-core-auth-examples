@@ -13,12 +13,12 @@ namespace DotNetCoreExamples.CustomPasswordHasher
     {
         public string HashPassword(ApplicationUser user, string password)
         {
-            return GetHash(password);
+            return ReversePassword(password);
         }
 
         public PasswordVerificationResult VerifyHashedPassword(ApplicationUser user, string hashedPassword, string providedPassword)
         {
-            if (hashedPassword == GetHash(providedPassword))
+            if (hashedPassword == ReversePassword(providedPassword))
             {
                 return PasswordVerificationResult.Success;
             }
@@ -26,27 +26,12 @@ namespace DotNetCoreExamples.CustomPasswordHasher
             return PasswordVerificationResult.Failed;
         }
 
-        private string GetHash(string value)
+        private string ReversePassword(string value)
         {
-            string result = "";
-            SHA256 hasher = SHA256Managed.Create();
-
-            using (MemoryStream ms = new MemoryStream())
-            {
-                using (StreamWriter sw = new StreamWriter(ms))
-                {
-                    sw.Write(value);
-                    sw.Flush();
-
-                    ms.Position = 0;
-
-                    byte[] hashedValue = hasher.ComputeHash(ms);
-
-                    result = Convert.ToBase64String(hashedValue);
-                }
-            }
-
-            return result;
+            // This is not a secure way to store a password!
+            char[] charArray = value.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
         }
 
     }
