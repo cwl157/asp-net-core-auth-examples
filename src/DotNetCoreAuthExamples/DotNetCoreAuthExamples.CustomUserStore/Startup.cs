@@ -32,7 +32,7 @@ namespace DotNetCoreExamples.CustomUserStore
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
 
-            services.AddSingleton<IUserDataAccess<ApplicationUser>, InMemoryUserDataAccess>();
+            services.AddSingleton<InMemoryUserDataAccess>();
             services.AddTransient<IUserStore<ApplicationUser>, InMemoryUserStore>();
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()

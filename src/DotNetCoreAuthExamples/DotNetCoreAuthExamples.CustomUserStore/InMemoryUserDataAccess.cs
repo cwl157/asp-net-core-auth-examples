@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DotNetCoreExamples.CustomUserStore
 {
-    public class InMemoryUserDataAccess : IUserDataAccess<ApplicationUser>
+    public class InMemoryUserDataAccess
     {
         private List<ApplicationUser> _users;
         public InMemoryUserDataAccess()
@@ -41,7 +41,8 @@ namespace DotNetCoreExamples.CustomUserStore
 
         public bool Update(ApplicationUser user)
         {
-            // Since get user gets the user from the same in-memory list, the user parameter is the same as the object in the list, so nothing needs to be updated here.
+            // Since get user gets the user from the same in-memory list,
+            // the user parameter is the same as the object in the list, so nothing needs to be updated here.
             return true;
         }
     }

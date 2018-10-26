@@ -10,8 +10,8 @@ namespace DotNetCoreExamples.CustomUserStore
 {
     public class InMemoryUserStore : IUserPasswordStore<ApplicationUser>, IUserEmailStore<ApplicationUser>
     {
-        private IUserDataAccess<ApplicationUser> _dataAccess;
-        public InMemoryUserStore(IUserDataAccess<ApplicationUser> da)
+        private InMemoryUserDataAccess _dataAccess;
+        public InMemoryUserStore(InMemoryUserDataAccess da)
         {
             _dataAccess = da;
         }
@@ -171,7 +171,6 @@ namespace DotNetCoreExamples.CustomUserStore
 
         public Task<IdentityResult> UpdateAsync(ApplicationUser user, CancellationToken cancellationToken)
         {
-            // TODO: It seems like by the time it gets here user already has the name filled in so i'm not sure if there is anything to do
             return Task<IdentityResult>.Run(() =>
             {
                 IdentityResult result = IdentityResult.Failed();
