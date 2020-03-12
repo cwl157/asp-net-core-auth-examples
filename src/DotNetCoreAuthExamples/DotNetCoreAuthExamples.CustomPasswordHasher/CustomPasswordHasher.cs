@@ -1,22 +1,19 @@
-﻿using DotNetCoreExamples.CustomPasswordHasher.Models;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Threading.Tasks;
 
-namespace DotNetCoreExamples.CustomPasswordHasher
+namespace DotNetCoreAuthExamples.CustomPasswordHasher
 {
-    public class CustomPasswordHasher : IPasswordHasher<ApplicationUser>
+    public class CustomPasswordHasher : IPasswordHasher<IdentityUser>
     {
-        public string HashPassword(ApplicationUser user, string password)
+        public string HashPassword(IdentityUser user, string password)
         {
             return ReversePassword(password);
         }
 
-        public PasswordVerificationResult VerifyHashedPassword(ApplicationUser user, string hashedPassword, string providedPassword)
+        public PasswordVerificationResult VerifyHashedPassword(IdentityUser user, string hashedPassword, string providedPassword)
         {
             if (hashedPassword == ReversePassword(providedPassword))
             {
@@ -33,6 +30,5 @@ namespace DotNetCoreExamples.CustomPasswordHasher
             Array.Reverse(charArray);
             return new string(charArray);
         }
-
     }
 }

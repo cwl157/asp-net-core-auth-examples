@@ -1,6 +1,6 @@
 using System;
 
-namespace DotNetCoreExamples.CustomPasswordHasher.Models
+namespace DotNetCoreAuthExamples.CustomPasswordHasher.Models
 {
     public class ErrorViewModel
     {

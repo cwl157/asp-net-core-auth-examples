@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2043
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreAuthExamples.CustomPasswordHasher", "DotNetCoreAuthExamples.CustomPasswordHasher\DotNetCoreAuthExamples.CustomPasswordHasher.csproj", "{3DDA600A-6BC4-4557-8A40-F89E4D68849A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreAuthExamples.CustomUserStore", "DotNetCoreAuthExamples.CustomUserStore\DotNetCoreAuthExamples.CustomUserStore.csproj", "{469038A8-02A3-4BC3-998C-4C506F8EA5DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreAuthExamples.CustomPasswordHasher", "DotNetCoreAuthExamples.CustomPasswordHasher\DotNetCoreAuthExamples.CustomPasswordHasher.csproj", "{3A2729CF-A4E5-4846-8D6B-7DE573857737}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3DDA600A-6BC4-4557-8A40-F89E4D68849A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3DDA600A-6BC4-4557-8A40-F89E4D68849A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3DDA600A-6BC4-4557-8A40-F89E4D68849A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3DDA600A-6BC4-4557-8A40-F89E4D68849A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{469038A8-02A3-4BC3-998C-4C506F8EA5DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{469038A8-02A3-4BC3-998C-4C506F8EA5DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{469038A8-02A3-4BC3-998C-4C506F8EA5DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{469038A8-02A3-4BC3-998C-4C506F8EA5DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A2729CF-A4E5-4846-8D6B-7DE573857737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2729CF-A4E5-4846-8D6B-7DE573857737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2729CF-A4E5-4846-8D6B-7DE573857737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2729CF-A4E5-4846-8D6B-7DE573857737}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {56D7E930-C439-460F-8E40-73BAF650B251}
+		SolutionGuid = {6E1811C6-8F05-41A3-BE4B-31C333C6BF7A}
 	EndGlobalSection
 EndGlobal
