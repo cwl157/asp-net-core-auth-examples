@@ -26,7 +26,6 @@ namespace DotNetCoreAuthExamples.CustomUserStore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<InMemoryUserDataAccess>();
-            services.AddTransient<IUserStore<IdentityUser>, InMemoryUserStore>();
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddUserStore<InMemoryUserStore>();
             services.AddControllersWithViews();
