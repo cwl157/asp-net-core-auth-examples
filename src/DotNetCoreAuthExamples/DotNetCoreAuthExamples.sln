@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreAuthExamples.CustomPasswordHasher", "DotNetCoreAuthExamples.CustomPasswordHasher\DotNetCoreAuthExamples.CustomPasswordHasher.csproj", "{3A2729CF-A4E5-4846-8D6B-7DE573857737}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreAuthExamples.CustomPasswordHasher", "DotNetCoreAuthExamples.CustomPasswordHasher\DotNetCoreAuthExamples.CustomPasswordHasher.csproj", "{3A2729CF-A4E5-4846-8D6B-7DE573857737}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreAuthExamples.CustomUserStore", "DotNetCoreAuthExamples.CustomUserStore\DotNetCoreAuthExamples.CustomUserStore.csproj", "{1ED80926-2545-4991-AA15-6891182579ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3A2729CF-A4E5-4846-8D6B-7DE573857737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A2729CF-A4E5-4846-8D6B-7DE573857737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A2729CF-A4E5-4846-8D6B-7DE573857737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ED80926-2545-4991-AA15-6891182579ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED80926-2545-4991-AA15-6891182579ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED80926-2545-4991-AA15-6891182579ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED80926-2545-4991-AA15-6891182579ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
